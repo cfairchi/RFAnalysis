@@ -1,11 +1,17 @@
 package com.expr.mvcr.stk.svc.services.models;
 
-public class ParabolicGainPattern {
-    /** Antenna back lobe gain, applied when the angle is greater than 90 degrees from the boresight. */
+public class ParabolicGainPattern extends RFGainPattern {
+    /**
+     * Antenna back lobe gain, applied when the angle is greater than 90 degrees from the boresight.
+     */
     private double backLobeGain;
-    /** Antenna diameter in meters. */
+    /**
+     * Antenna diameter in meters.
+     */
     private double diameter;
-    /** Antenna efficiency, as a ratio between zero and one. */
+    /**
+     * Antenna efficiency, as a ratio between zero and one.
+     */
     private double efficiency;
 
     public double getBackLobeGain() {
