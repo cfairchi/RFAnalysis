@@ -6,20 +6,20 @@ import java.util.List;
 
 public class LinkBudgetRequest {
     private List<RFPlatform> rfPlatforms;
+    private List<RFPlatform> interferingPlatforms;
     private List<Link> commsNetwork;
     private List<TimeInterval> evalIntervals;
-    private List<Transmitter> interferingTransmitters;
     private double timeStepSeconds;
 
     public LinkBudgetRequest() {
     }
 
-    public List<Transmitter> getInterferingTransmitters() {
-        return interferingTransmitters;
+    public List<RFPlatform> getInterferingPlatforms() {
+        return interferingPlatforms;
     }
 
-    public void setInterferingTransmitters(List<Transmitter> interferingTransmitters) {
-        this.interferingTransmitters = interferingTransmitters;
+    public void setInterferingPlatforms(List<RFPlatform> interferingPlatforms) {
+        this.interferingPlatforms = interferingPlatforms;
     }
 
     public List<RFPlatform> getRfPlatforms() {
