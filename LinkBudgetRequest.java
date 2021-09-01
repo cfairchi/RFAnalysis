@@ -8,9 +8,18 @@ public class LinkBudgetRequest {
     private List<RFPlatform> rfPlatforms;
     private List<Link> links;
     private List<TimeInterval> evalIntervals;
+    private List<Transmitter> interferingTransmitters;
     private double timeStepSeconds;
 
     public LinkBudgetRequest() {
+    }
+
+    public List<Transmitter> getInterferingTransmitters() {
+        return interferingTransmitters;
+    }
+
+    public void setInterferingTransmitters(List<Transmitter> interferingTransmitters) {
+        this.interferingTransmitters = interferingTransmitters;
     }
 
     public List<RFPlatform> getRfPlatforms() {
