@@ -6,7 +6,7 @@ import java.util.List;
 
 public class LinkBudgetRequest {
     private List<RFPlatform> rfPlatforms;
-    private List<Link> links;
+    private List<Link> commsNetwork;
     private List<TimeInterval> evalIntervals;
     private List<Transmitter> interferingTransmitters;
     private double timeStepSeconds;
@@ -38,12 +38,13 @@ public class LinkBudgetRequest {
         this.timeStepSeconds = timeStepSeconds;
     }
 
-    public List<Link> getLinks() {
-        return links;
+
+    public List<Link> getCommsNetwork() {
+        return commsNetwork;
     }
 
-    public void setLinks(List<Link> links) {
-        this.links = links;
+    public void setCommsNetwork(List<Link> commsNetwork) {
+        this.commsNetwork = commsNetwork;
     }
 
     public List<TimeInterval> getEvalIntervals() {
